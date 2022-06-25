@@ -10,33 +10,33 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace LibaryWeb.Pages.Categories;
 
 
-public class CreateModel : PageModel
+public class DeleteModel : PageModel
 {
     private readonly ApplicationDbContext _db;
     [BindProperty]
     public Category Category { get; set; }
 
-    public CreateModel(ApplicationDbContext db)
+    public DeleteModel(ApplicationDbContext db)
     {
         _db = db;
     }
-    public void OnGet()
+    public void OnGet(int id)
     {
+        Category = _db.Category.Find(id);
     }
 
     public async Task<IActionResult> OnPost()
     {
-        if(Category.Name == Category.DisplayOrder.ToString())
-        {
-            ModelState.AddModelError("Category.Name", "The Display cannot exactly match the Name.");
-        }
-        if (ModelState.IsValid)
-        {
-            await _db.Category.AddAsync(Category);
-            await _db.SaveChangesAsync();
-            TempData["success"] = "Category created succesfully";
+            var categoryFromDb = _db.Category.Find(Category.Id);
+            if (categoryFromDb != null)
+            {
+                _db.Category.Remove(categoryFromDb);
+                await _db.SaveChangesAsync();
+            TempData["success"] = "Category deleted succesfully";
             return RedirectToPage("Index");
         }
+
+            
         return Page();
     }
 }
