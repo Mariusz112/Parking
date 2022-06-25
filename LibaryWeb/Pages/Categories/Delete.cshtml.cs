@@ -32,7 +32,7 @@ public class DeleteModel : PageModel
             {
                 _db.Category.Remove(categoryFromDb);
                 await _db.SaveChangesAsync();
-            TempData["success"] = "Category deleted succesfully";
+            TempData["success"] = "Book deleted succesfully";
             return RedirectToPage("Index");
         }
 

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibaryWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220624171430_AddCategoryToDb")]
+    [Migration("20220625041820_AddCategoryToDb")]
     partial class AddCategoryToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -27,15 +27,11 @@ public class EditModel : PageModel
 
     public async Task<IActionResult> OnPost()
     {
-        if(Category.Name == Category.DisplayOrder.ToString())
-        {
-            ModelState.AddModelError("Category.Name", "The Display cannot exactly match the Name.");
-        }
         if (ModelState.IsValid)
         {
             _db.Category.Update(Category);
             await _db.SaveChangesAsync();
-            TempData["success"] = "Category updated succesfully";
+            TempData["success"] = "Updated updated succesfully";
             return RedirectToPage("Index");
         }
         return Page();

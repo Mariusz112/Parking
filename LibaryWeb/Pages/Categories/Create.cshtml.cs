@@ -26,15 +26,12 @@ public class CreateModel : PageModel
 
     public async Task<IActionResult> OnPost()
     {
-        if(Category.Name == Category.DisplayOrder.ToString())
-        {
-            ModelState.AddModelError("Category.Name", "The Display cannot exactly match the Name.");
-        }
+
         if (ModelState.IsValid)
         {
             await _db.Category.AddAsync(Category);
             await _db.SaveChangesAsync();
-            TempData["success"] = "Category created succesfully";
+            TempData["success"] = "Book added succesfully";
             return RedirectToPage("Index");
         }
         return Page();
