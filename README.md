@@ -9,7 +9,6 @@ W ramach aplikacji powinna zawżeć się możliwość:
 - dodawania, edycji, usuwania i przeglądania autorów
 
 - dodawania, edycji, usuwania i przeglądania książek"
-- 
 "
 
 
