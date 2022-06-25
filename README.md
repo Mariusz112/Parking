@@ -9,6 +9,7 @@ W ramach aplikacji powinna zawżeć się możliwość:
 
 - dodawania, edycji, usuwania i przeglądania książek"
 - 
-![1](https://user-images.githubusercontent.com/76970415/175758419-4ca40440-b057-4173-8832-5980188d4589.png)
+
+![1](https://user-images.githubusercontent.com/76970415/175759305-439d0ef7-7971-40a2-a2ba-3eb93f331cda.png)
 
 # LibaryWeb
