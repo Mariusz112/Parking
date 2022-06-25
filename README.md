@@ -1,4 +1,5 @@
 Zadanie wstepne staż
+
 "Utwórz projekt ASP .NET Web API z frontendem Angular (lub jeśli okaże się to zbyt trudne to częśc frontendową można równiez wykonać w razor pages) oraz bez kont lokalnych.
 
 Do obsługi bazy danych użyj entity framework, a jako bazy danych bazę sql server (sql express) lub ewentualnie inmemory databse (entity framework).
