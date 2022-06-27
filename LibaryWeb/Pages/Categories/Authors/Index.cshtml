@@ -9,31 +9,25 @@
 <div class="container p-3">
     <div class="row pt-4">
         <div class="col-6">
-            <h2 classs="text-primary">Bookshelf</h2>
+            <h2 classs="text-primary">Authors</h2>
         </div>
         <div class="col-6 text-end">
             <a asp-page="create" class="btn btn-primary">
-                <i class="bi bi-plus-square"></i> &nbsp; Add new Book
+                <i class="bi bi-plus-square"></i> &nbsp; Add new Author
             </a>
         </div>
     </div>
 
     <br /><br />
 
-    <table class="table table-bordered table-striped" style="width:100%">
+     <table class="table table-bordered table-striped" style="width:100%">
         <thead>
             <tr>
                 <th>
                     Title
                 </th>
                 <th>
-                    Description 
-                </th>
-                 <th>
-                    Release Date
-                </th>
-                <th>
-                    Author 
+                    Id
                 </th>
                 <th></th>
             </tr>
@@ -42,10 +36,8 @@
             @foreach(var obj in Model.Categories)
             {
                 <tr>
-                <td width="50%">@obj.Title</td>
-                <td width="30%">@obj.Description </td>
-                <td width="30%">@obj.Release_Date </td>
-                <td width="30%">@obj.Author  </td>
+                <td width="50%">@obj.Name</td>
+                <td width="30%">@obj.DisplayOrder</td>
                 <td>
                     <div class="w-75 btn-group" role="group">
                     <a asp-page="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2">
@@ -60,6 +52,6 @@
             }
             
         </tbody>
-    </table>
+    </table>           
 
 </div>

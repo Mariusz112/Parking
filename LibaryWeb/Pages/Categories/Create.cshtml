@@ -10,14 +10,24 @@
         </div>
         <div asp-validation-summary="All"></div>
         <div class="mb-3">
-            <label asp-for="Category.Name">Title</label>
-            <input asp-for="Category.Name" class="form-control" />
-            <span asp-validation-for="Category.Name" class="text-danger"></span>
+            <label asp-for="Category.Title">Title</label>
+            <input asp-for="Category.Title" class="form-control" />
+            <span asp-validation-for="Category.Title" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="Category.DisplayOrder"></label>
-            <input asp-for="Category.DisplayOrder" class="form-control" />
-            <span asp-validation-for="Category.DisplayOrder" class="text-danger"></span>
+            <label asp-for="Category.Description ">Description </label>
+            <input asp-for="Category.Description " class="form-control" />
+            <span asp-validation-for="Category.Description " class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Category.Release_Date">Release Date</label>
+            <input asp-for="Category.Release_Date" class="form-control" />
+            <span asp-validation-for="Category.Release_Date" class="text-danger"></span>
+        </div>
+         <div class="mb-3">
+            <label asp-for="Category.Author">Author</label>
+            <input asp-for="Category.Author" class="form-control" />
+            <span asp-validation-for="Category.Author" class="text-danger"></span>
         </div>
         <button type="submit" class="btn btn-primary" style="width:150px;">Add</button>
         <a asp-page="Index" class="btn btn-secondary" style="width:150px;"> Back to List</a>
