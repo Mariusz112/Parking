@@ -11,9 +11,9 @@ W ramach aplikacji powinna zawżeć się możliwość:
 - dodawania, edycji, usuwania i przeglądania książek"
 "
 
+![1](https://user-images.githubusercontent.com/76970415/175879374-1d00ac46-8d20-4b3c-8e94-bcf836a3febc.png)
+![2](https://user-images.githubusercontent.com/76970415/175879398-14544b5a-803a-48d4-88e8-0b3c525d2473.png)
 
 
-![1](https://user-images.githubusercontent.com/76970415/175759305-439d0ef7-7971-40a2-a2ba-3eb93f331cda.png)
-do frontendu użyłem gotowego bootstrapa, brak podstrony dla Autorów
-
+Do frontendu użyłem gotowego bootstrapa, brak relacji między tabelami w BD.
 # LibraryWeb
